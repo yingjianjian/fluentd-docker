@@ -44,8 +44,6 @@ ENV FLUENTD_CONF="fluent.conf"
 
 ENV LD_PRELOAD=""
 EXPOSE 24224 5140
-RUN chmod 777 /var/log
-USER fluent
 ENTRYPOINT ["tini",  "--", "/bin/entrypoint.sh"]
 CMD ["fluentd"]
 
