@@ -25,7 +25,6 @@ RUN apk update \
  && gem install bigdecimal -v 1.4.4 \
  && gem install elasticsearch -v 6.0 \
  && gem install fluent-plugin-elasticsearch -v 4.0.3 \
- && gem install fluent-plugin-kubernetes_metadata_filter -v 4.0.3 \
  && apk del .build-deps \
  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
 
