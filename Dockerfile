@@ -24,6 +24,7 @@ RUN apk update \
  && gem install fluentd -v 1.9.2 \
  && gem install bigdecimal -v 1.4.4 \
  && gem install elasticsearch -v 6.0 \
+ && gem instakk fluent-plugin-concat \
  && gem install fluent-plugin-elasticsearch -v 4.0.3 \
  && apk del .build-deps \
  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
